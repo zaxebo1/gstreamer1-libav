@@ -8,10 +8,12 @@ URL:            http://gstreamer.freedesktop.org/
 Source0:        http://gstreamer.freedesktop.org/src/gst-libav/gst-libav-%{version}.tar.xz
 BuildRequires:  gstreamer1-devel >= %{version}
 BuildRequires:  gstreamer1-plugins-base-devel >= %{version}
-BuildRequires:  orc-devel bzip2-devel zlib-devel ffmpeg-devel
-%ifarch %{ix86} x86_64
+BuildRequires:  orc-devel
+BuildRequires:  bzip2-devel
+BuildRequires:  zlib-devel
+BuildRequires:  ffmpeg-devel
+BuildRequires:  ffmpeg
 BuildRequires:  yasm
-%endif
 
 %description
 GStreamer is a streaming media framework, based on graphs of filters which
